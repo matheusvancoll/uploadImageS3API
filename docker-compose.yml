@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  image_API_S3:
+    container_name: image_API_S3
+    image: node:16.13.2
+    ports:
+      - 8085:8085
+    build:
+      context: .
+      dockerfile: Dockerfile
